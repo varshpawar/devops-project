@@ -1,9 +1,15 @@
-from flask import Flask
-app = Flask(__name__)
+from flask import Flask, jsonify
 
-@app.route("/")
+app=Flask(__name__)
+@app.route('/')
 def home():
-    return "Hello Devops"
+    return "App is running!"
+@app.route('/users')
+def users():
+    return jsonify([
+        {"name": "User1"},
+        {"name": "User2"},
+    ])
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=3000)
