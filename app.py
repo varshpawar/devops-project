@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 app=Flask(__name__)
 @app.route('/')
 def home():
-    return "App is Running Successfully!"
+    return "App V1 Running Successfully!"
 @app.route('/users')
 def users():
     return jsonify([
