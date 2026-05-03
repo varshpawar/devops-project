@@ -23,7 +23,7 @@ The application is automatically built, containerized, and deployed on a Kuberne
 ## 🏗️ Architecture
 
 <p align="center">
-  <img src="downloads/flow.png" width="700"/>
+  <img src="image/flow.png" width="700"/>
 </p>
 
 ---
