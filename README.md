@@ -30,69 +30,65 @@ The application is automatically built, containerized, and deployed on a Kuberne
 
 ## 🔄 Workflow
 
-
-GitHub → Jenkins → Docker → Kubernetes → Application
-
+<p align="left">
+<b>GitHub ➝ Jenkins ➝ Docker ➝ Kubernetes ➝ Application</b>
+</p>
 
 ---
 
 ## 📁 Project Structure
 
-
+```
 app.py
-
 requirements.txt
-
 Dockerfile
-
 Jenkinsfile
-
 deployment.yaml
-
 service.yaml
-
 README.md
-
+```
 
 ---
 
 ## 🚀 Getting Started
 
 ### Clone Repository
-
+```
 git clone https://github.com/varshpawar/devops-project.git
-
 cd devops-project
-
+```
 
 ### Build Docker Image
-
+```
 docker build -t my-app .
-
+```
 
 ### Run Container
-
+```
 docker run -p 3000:3000 my-app
-
+```
 
 ---
 
 ## ☸️ Kubernetes Deployment
 
-
+```
 kubectl apply -f deployment.yaml
-
 kubectl apply -f service.yaml
-
 kubectl get pods
-
+```
 
 ---
 
 ## 🌐 Application Access
 
+```
+NodePort Service:
+http://<node-ip>:<node-port>
 
-http://<node-ip>:3000
+Example:
+http://192.168.49.2:30000
+```
 
 ---
 
